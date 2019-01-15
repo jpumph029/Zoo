@@ -4,7 +4,15 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Parrot
+    class Parrot : Birds
     {
+        public override string Name { get; set; } = "Picky Parrot";
+        public override int Legs { get; set; } = 2;
+
+        public override bool Speak()
+        {
+            Console.Write($"Hello!\n");
+            return true;
+        }
     }
 }
