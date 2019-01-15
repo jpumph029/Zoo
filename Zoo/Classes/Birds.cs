@@ -6,7 +6,7 @@ namespace Zoo.Classes
 {
     abstract class Birds : Animal
     {
-        public abstract string MyProperty { get; set; }
+        public abstract string Name { get; set; }
         public virtual bool CanFly { get; set; } = true;
     }
 }
