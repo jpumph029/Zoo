@@ -8,12 +8,12 @@ namespace Zoo.Classes
     {
         public override bool Speak()
         {
-            Console.Write("I am roaring");
+           
             return true;
         }
         public override bool Play()
         {
-            Console.Write("I am playing");
+            Console.Write("I am playing\n");
             return true;
         }
     }

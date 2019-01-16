@@ -16,7 +16,7 @@ namespace Zoo.Classes
 
         public override bool Speak()
         {
-            Console.Write("*Whale noises*\n");
+            Console.Write("Whale: Whale noises\n");
             return true;
         }
     }

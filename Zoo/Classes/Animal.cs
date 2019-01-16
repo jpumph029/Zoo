@@ -11,7 +11,7 @@ namespace Zoo.Classes
 
         public virtual bool Eat()
         {
-            Console.Write("I am eating");
+            Console.Write("I am eating\n");
             return true;
         }
         public abstract bool Speak();
