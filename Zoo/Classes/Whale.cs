@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    class Whale : Aquatic
+    class Whale : Aquatic, Iswim 
     {
         public override int Legs { get; set; } = 0;
 
@@ -18,6 +19,15 @@ namespace Zoo.Classes
         {
             Console.Write("Whale: Whale noises\n");
             return true;
+        }
+
+        public void Stop()
+        {
+
+        }
+
+        public void Swim()
+        {
         }
     }
 }

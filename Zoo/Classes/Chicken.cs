@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    class Chicken : Birds
+    class Chicken : Birds, Ifly, Iswim
     {
         public override string Name { get; set; } = "Chester";
         public override int Legs { get; set; } = 2;
@@ -18,6 +19,24 @@ namespace Zoo.Classes
         {
             Console.Write($"{Name} is not hungry\n"); 
             return false;
+        }
+        public void Fly()
+        {
+            Console.Write("I am starting to fly\n");
+        }
+
+        public void Land()
+        {
+            Console.Write("I am not longer flying\n");
+        }
+        public void Swim()
+        {
+            Console.Write("I am starting to swim\n");
+        }
+
+        public void Stop()
+        {
+            Console.Write("I am not longer swimming\n");
         }
     }
 }
