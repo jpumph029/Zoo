@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoo.Classes;
+using Zoo.Interfaces;
 
 namespace Zoo
 {
@@ -24,16 +25,30 @@ namespace Zoo
             Console.Write("\n");
             chester.Speak();
             chester.Eat();
+            chester.Fly();
+            chester.Land();
+            chester.Swim();
+            chester.Stop();
             Console.Write("\n");
             whale.Speak();
             whale.Play();
+            whale.Swim();
             Console.Write("\n");
             seaLion.Speak();
             seaLion.Play();
+            whale.Swim();
             Console.Write("\n");
             parrot.Speak();
+            parrot.Fly();
+            parrot.Land();
             parrot.Eat();
             Console.ReadKey();
+            Console.Write("\n");
+
+
+            
+
+
 
         }
     }
