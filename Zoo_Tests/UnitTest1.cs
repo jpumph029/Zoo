@@ -18,5 +18,17 @@ namespace Zoo_Tests
             Chicken chicken = new Chicken();
             Assert.True(chicken.Speak());
         }
+        [Fact]
+        public void CanParrotEat()
+        {
+            Parrot parrot = new Parrot();
+            Assert.True(parrot.Eat());
+        }
+        [Fact]
+        public void CanParrotSpeak()
+        {
+            Parrot parrot = new Parrot();
+            Assert.True(parrot.Speak());
+        }
     }
 }
