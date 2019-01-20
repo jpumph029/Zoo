@@ -42,5 +42,17 @@ namespace Zoo_Tests
             Lion lion = new Lion();
             Assert.True(lion.Speak());
         }
+        [Fact]
+        public void CanTigerEat()
+        {
+            Tiger tiger = new Tiger();
+            Assert.True(tiger.Eat());
+        }
+        [Fact]
+        public void CanTigerSpeak()
+        {
+            Tiger tiger = new Tiger();
+            Assert.True(tiger.Speak());
+        }
     }
 }
