@@ -96,5 +96,23 @@ namespace Zoo_Tests
             Whale whale = new Whale();
             Assert.IsType<Whale>(whale);
         }
+        [Fact]
+        public void CanSeaLionUseIswim()
+        {
+            SeaLion sealion = new SeaLion();
+            Assert.True(sealion.Swim());
+        }
+        [Fact]
+        public void CanSeaLionStopSwimming()
+        {
+            SeaLion sealion = new SeaLion();
+            Assert.True(sealion.Stop());
+        }
+        [Fact]
+        public void SeaLionISAnimal()
+        {
+            SeaLion sealion = new SeaLion();
+            Assert.IsType<SeaLion>(sealion);
+        }
     }
 }

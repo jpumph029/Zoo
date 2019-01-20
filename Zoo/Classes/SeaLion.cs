@@ -24,14 +24,16 @@ namespace Zoo.Classes
             Console.WriteLine("Sealion *eating*");
             return true;
         }
-        public void Swim()
+        public bool Swim()
         {
             Console.Write("I am starting to swim\n");
+            return true;
         }
 
-        public void Stop()
+        public bool Stop()
         {
             Console.Write("I am not longer swimming\n");
+            return true;
         }
     }
 }
