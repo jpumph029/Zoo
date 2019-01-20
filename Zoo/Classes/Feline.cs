@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Feline : Mammal
+    public abstract class Feline : Mammal
     {
         public override bool Speak()
         {

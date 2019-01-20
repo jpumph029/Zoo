@@ -5,7 +5,7 @@ using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    class Whale : Aquatic, Iswim 
+    public class Whale : Aquatic, Iswim 
     {
         public override int Legs { get; set; } = 0;
 
@@ -21,13 +21,14 @@ namespace Zoo.Classes
             return true;
         }
 
-        public void Stop()
+        public bool Stop()
         {
-
+            return true;
         }
 
-        public void Swim()
+        public bool Swim()
         {
+            return true;
         }
     }
 }

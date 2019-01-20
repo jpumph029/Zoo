@@ -5,7 +5,7 @@ using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    class Parrot : Birds , Ifly
+    public class Parrot : Birds , Ifly
     {
         public override string Name { get; set; } = "Picky Parrot";
         public override int Legs { get; set; } = 2;
@@ -15,15 +15,23 @@ namespace Zoo.Classes
             Console.Write($"Parrot: Hello!\n");
             return true;
         }
+        public override bool Eat()
+        {
+            Console.WriteLine("Parrot is eating");
+            return true;
+        }
 
-        public void Fly()
+        public bool Fly()
         {
             Console.Write("I am starting to fly\n");
+            return true;
         }
 
-        public void Land()
+        public bool Land()
         {
             Console.Write("I am not longer flying\n");
+            return true;
         }
+
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Aquatic : Mammal
+    public abstract class Aquatic : Mammal
     {
         public virtual bool Migrate()
         {
