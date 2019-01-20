@@ -67,6 +67,18 @@ namespace Zoo_Tests
             Assert.True(whale.Speak());
         }
         [Fact]
+        public void CanSeaLionEat()
+        {
+            SeaLion sealion = new SeaLion();
+            Assert.True(sealion.Eat());
+        }
+        [Fact]
+        public void CanSeaLionSpeak()
+        {
+            SeaLion sealion = new SeaLion();
+            Assert.True(sealion.Speak());
+        }
+        [Fact]
         public void DoWhaleUseIswim()
         {
             Whale whale = new Whale();

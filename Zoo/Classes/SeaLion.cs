@@ -5,7 +5,7 @@ using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    class SeaLion : Aquatic, Iswim
+    public class SeaLion : Aquatic, Iswim
     {
         public override int Legs { get; set; } = 4;
         public override bool Play()
@@ -17,6 +17,11 @@ namespace Zoo.Classes
         public override bool Speak()
         {
             Console.Write("Sea Lion: BARK BARK\n");
+            return true;
+        }
+        public override bool Eat()
+        {
+            Console.WriteLine("Sealion *eating*");
             return true;
         }
         public void Swim()
