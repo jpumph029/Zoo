@@ -144,5 +144,24 @@ namespace Zoo_Tests
             Chicken chicken = new Chicken();
             Assert.IsType<Chicken>(chicken);
         }
+        [Fact]
+        public void CanParrotuseIfly()
+        {
+            Parrot parrot = new Parrot();
+            Assert.True(parrot.Fly());
+        }
+        [Fact]
+        public void CanParrotLand()
+        {
+            Parrot parrot = new Parrot();
+            Assert.True(parrot.Land());
+        }
+        [Fact]
+        public void CanParrotParrot()
+        {
+            Parrot parrot = new Parrot();
+            Assert.IsType<Parrot>(parrot);
+        }
+
     }
 }
