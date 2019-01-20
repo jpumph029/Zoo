@@ -114,5 +114,35 @@ namespace Zoo_Tests
             SeaLion sealion = new SeaLion();
             Assert.IsType<SeaLion>(sealion);
         }
+        [Fact]
+        public void CanChickenUseIfly()
+        {
+            Chicken chicken = new Chicken();
+            Assert.True(chicken.Fly());
+        }
+        [Fact]
+        public void CanChickenStopFlying()
+        {
+            Chicken chicken = new Chicken();
+            Assert.True(chicken.Land());
+        }
+        [Fact]
+        public void CanChickenUseIswim()
+        {
+            Chicken chicken = new Chicken();
+            Assert.True(chicken.Swim());
+        }
+        [Fact]
+        public void CanChickenStopSwimming()
+        {
+            Chicken chicken = new Chicken();
+            Assert.True(chicken.Stop());
+        }
+        [Fact]
+        public void ChickenIsAnimal()
+        {
+            Chicken chicken = new Chicken();
+            Assert.IsType<Chicken>(chicken);
+        }
     }
 }

@@ -6,8 +6,8 @@ namespace Zoo.Interfaces
 {
     interface Ifly
     {
-        void Fly();
-        void Land();
+        bool Fly();
+        bool Land();
 
     }
 }

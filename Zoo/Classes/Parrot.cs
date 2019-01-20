@@ -21,14 +21,17 @@ namespace Zoo.Classes
             return true;
         }
 
-        public void Fly()
+        public bool Fly()
         {
             Console.Write("I am starting to fly\n");
+            return true;
         }
 
-        public void Land()
+        public bool Land()
         {
             Console.Write("I am not longer flying\n");
+            return true;
         }
+
     }
 }
