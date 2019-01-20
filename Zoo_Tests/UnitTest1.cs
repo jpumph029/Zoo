@@ -54,5 +54,17 @@ namespace Zoo_Tests
             Tiger tiger = new Tiger();
             Assert.True(tiger.Speak());
         }
+        [Fact]
+        public void CanWhaleNotPlay()
+        {
+            Whale whale = new Whale();
+            Assert.False(whale.Play());
+        }
+        [Fact]
+        public void CanWhaleSpeak()
+        {
+            Whale whale = new Whale();
+            Assert.True(whale.Speak());
+        }
     }
 }
