@@ -21,13 +21,14 @@ namespace Zoo.Classes
             return true;
         }
 
-        public void Stop()
+        public bool Stop()
         {
-
+            return true;
         }
 
-        public void Swim()
+        public bool Swim()
         {
+            return true;
         }
     }
 }
